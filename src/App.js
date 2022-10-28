@@ -1,18 +1,11 @@
-import {useState, useEffect} from 'react';
-import NavBar from "./navBar/navBar.js"
-import Thumb from './thumb/thumb.js';
-
-function App(){
-  
-  
-  return (<div>
-    <NavBar/>
-    <Thumb/>
-   
-  </div>
+import { useState, useEffect } from 'react';
+import Home from "./pages/Home"
+import "./components/navBar/navBar.css";
+function App() {
+  return (
+    <Home />
   );
-  }
-  
-  export default App;
-   
- 
+}
+
+export default App;
+

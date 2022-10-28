@@ -1,0 +1,19 @@
+[
+    {
+      "id": "c67ab8a7",
+      "name": "Nathalie Jean",
+      "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
+    },
+    {
+      "id": "b9123946",
+      "name": "Della Case",
+      "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
+      
+    },
+    {
+        "id": "46d188c5",
+        "title": "Studio de charme - Buttes Chaumont",
+        "name": "Franck Maher",
+        "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
+    }
+]
