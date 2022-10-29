@@ -9,6 +9,7 @@ import NavBar from "../src/components/navBar/navBar";
 
 
 import "./components/navBar/navBar.css";
+import "./components/Appartment/appartment.style.css";
 
 
 function App() {
