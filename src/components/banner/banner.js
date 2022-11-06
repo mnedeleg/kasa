@@ -1,15 +1,13 @@
 import React, {useState, useEffect} from 'react';
-
+import BannerImg from "../../image/banner-img.jpg";
 
 function Banner() {
     return (
         <div>
             <div>
-                <img src="./logo/logo-casa.svg" alt="Logo Kasa"/>
+                <img src= {BannerImg} alt="image de bord de mer dans le brouillard"/>
             </div>
-            <div>
                 <h1> Chez vous, partout et ailleurs </h1>
-            </div>
         </div>
     )
 }
