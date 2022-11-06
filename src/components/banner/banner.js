@@ -5,7 +5,7 @@ function Banner() {
     return (
         <div>
             <div>
-                <img src="" alt="test"/>
+                <img src="./logo/logo-casa.svg" alt="Logo Kasa"/>
             </div>
             <div>
                 <h1> Chez vous, partout et ailleurs </h1>
