@@ -3,11 +3,11 @@ import BannerImg from "../../image/banner-img.jpg";
 
 function Banner() {
     return (
-        <div>
+        <div className= 'banner'>
             <div>
-                <img src= {BannerImg} alt="image de bord de mer dans le brouillard"/>
+                <img className='banner-img' src= {BannerImg} alt="image de bord de mer dans le brouillard"/>
             </div>
-                <h1> Chez vous, partout et ailleurs </h1>
+                <h1 className='banner-title'> Chez vous, partout et ailleurs </h1>
         </div>
     )
 }

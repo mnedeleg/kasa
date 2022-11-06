@@ -10,7 +10,8 @@ import singleAppartment from './components/Appartment/singleAppartment';
 
 
 import "./components/navBar/navBar.css";
-import "./components/Appartment/appartment.style.css"
+import "./components/Appartment/appartment.style.css";
+import "./components/banner/banner.css";
 
 
 function App() {
