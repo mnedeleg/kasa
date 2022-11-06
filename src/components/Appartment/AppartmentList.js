@@ -3,6 +3,8 @@ import appartementListData from "../../data/kasa-datas.json"
 import Appartment from "./index"
 
 const AppartmentList = () => {
+ 
+
     return (
         <div>
              {appartementListData.map((appart) => <Appartment key={appart.id} appart={appart}/>  )}

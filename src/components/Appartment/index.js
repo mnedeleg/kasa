@@ -2,11 +2,15 @@ import React from 'react';
 
 
 const Index = ({appart}) => {
+      
+    const handleClick = () =>
+    console.log("Hello you");
+
     return (
 
         <div className='all-flat' >
         <div>
-            <a href="#" className='single-flat'>
+            <a onClick ={handleClick} href="/logement/:id" className='single-flat'>
                 <div>
                     <img className='single-flat-img' src={appart.cover} alt= {appart.title}/>
                 </div>
