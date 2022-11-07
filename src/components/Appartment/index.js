@@ -1,12 +1,21 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import { link } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 
 const Index = ({appart}) => {
       
-    const singleAppartment = (id) =>
+    const singleAppartment = (flatId) =>
     console.log("Click vers le logement");
-    <link to ={`/logement/${appart.id}`}>test</link>;
+        // const { flatId } = useParams();
+
+        /////////////////////////////
+
+        // useEffect(()=>{
+        //     <link to ={`/logement/${appart.id}`}>test</link>
+        // })
+    
 
     return (
         

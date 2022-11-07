@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function 
-Accommodation() {
+const Accommodation = () => {
   return (
     <div>
         <h1>Logement</h1>
     </div>
   )
 }
+
+export default Accommodation;
