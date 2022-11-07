@@ -1,6 +1,6 @@
-import React from "react";
-import appartementListData from "../../data/kasa-datas.json"
-import {useParams} from "react-router-dom";
+// import React from "react";
+// import appartementListData from "../../data/kasa-datas.json"
+// import {useParams} from "react-router-dom";
 
 // const singleAppartment = (appartmentListData) => {
 //     const params = useParams()
