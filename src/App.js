@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Home from "./pages/Home";
 import Accommodation from "./pages/Accommodation";
 import About from "./pages/About";
-import Error from "./pages/Notfound";
+import PageNotFound from "./pages/PageNotfound";
 import User from "../src/user/index";
 import NavBar from "../src/components/navBar/navBar";
 import singleAppartment from './components/Appartment/singleCardAppartment';
@@ -17,6 +17,7 @@ import "./components/banner/banner.css";
 function App() {
   return (
     <div>
+      
     <NavBar/>
     <BrowserRouter>
     <Routes>
@@ -25,9 +26,10 @@ function App() {
         {/* <singleAppartment/> */}
       </Route>,
       <Route path="/a-propos" element={<About/>}></Route>,
-      <Route path="page-introuvable" element={<Error/>}></Route>
+      <Route path="*" element={<PageNotFound/>}></Route>
     </Routes>
   </BrowserRouter>
+  
   </div>
   );
 }
