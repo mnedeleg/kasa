@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Error from "./pages/Notfound";
 import User from "../src/user/index";
 import NavBar from "../src/components/navBar/navBar";
-import singleAppartment from './components/Appartment/singleAppartment';
+import singleAppartment from './components/Appartment/singleCardAppartment';
 
 
 import "./components/navBar/navBar.css";

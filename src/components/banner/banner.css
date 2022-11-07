@@ -13,6 +13,9 @@
     height: 223px;
     width: 100%;
     border-radius: 25px;
+    /* background: url('/kasa/src/image/banner-img.jpg');
+    background-color: black;
+    opacity: 30%; */
 }
 
 .banner-title{
