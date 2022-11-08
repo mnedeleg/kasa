@@ -6,7 +6,7 @@ const AppartmentList = () => {
  
 
     return (
-        <div>
+        <div className="all-flat" >
              {appartementListData.map((appart) => <Appartment key={appart.id} appart={appart}/>  )}
                 
         </div>

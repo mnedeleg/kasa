@@ -17,5 +17,5 @@
 //          <p> appart.host </p>}        
 //          <p> appart.rating <p/>
 //          }
-//     <div>
+//     <div> 
 

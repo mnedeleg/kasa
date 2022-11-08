@@ -1,24 +1,40 @@
-// import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-// const Accommodation = () => {
-//   return (
-//     <div>
-//         <h1>Logement</h1>
-//     </div>
-//   )
-// }
+import {useParams,  useNavigate} from "react-router-dom";
+import appartementListData from "../data/kasa-datas.json"
+const SingleAppartment = () => {
+    const [appt, setAppt] = useState(null)
+    const { id } = useParams()
+    const navigate = useNavigate();
+    useEffect(()=> {
+        const appartment = appartementListData.find((app) => app.id === id);
+        if(!appartment){
+            return navigate("/page-introuvable")
+        }
+        setAppt(appartment)
+    })
 
-// export default Accommodation;
+    if(appt === null) return null;
+    return(
+    <div>
+         <h1> appart.pictures </h1>            
+         <p> appart.location </p>    
+         <p>{ appt.tag} </p>     
+         <p> {appt.description} </p>
+         <p>{ appt.equipments} </p>            
+         <p> {appt.rating} </p>
+    </div> 
+    )
+}
 
-import Accommodation from "../components/Appartment/singleCardAppartment"
 
-const SingleCardFlat = () => {
+{/* const SingleCardFlat = () => {
 
     return (
         <div>
             <Accommodation/>
         </div>
     );
-}
+} */}
 
-export default SingleCardFlat;
+export default SingleAppartment;

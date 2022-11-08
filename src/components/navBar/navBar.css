@@ -32,11 +32,13 @@ body{
 .item a:hover {
     border-bottom: 3px solid #FF6060;
 }
-.item a:active{
-    border-bottom: 3px solid #FF6060;
-}
+
 
 .link{
     text-decoration: none;
     color:  #FF6060;
+}
+
+.active{
+    border-bottom: 3px solid #FF6060;
 }
