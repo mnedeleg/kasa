@@ -8,7 +8,7 @@ body{
 .all-flat{
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     background-color: #F6F6F6;
     border-radius: 25px;
@@ -20,6 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* align-items: space-between; */
     width: calc(100% / 3 - 20px);
     border-radius: 10px;
     text-decoration: none;
@@ -33,6 +34,7 @@ body{
     height: 340px;
     border-radius: 10px;
     object-fit:cover;
+    object-position: 15% 100%;
 }
 
 .single-flat-img::before{
