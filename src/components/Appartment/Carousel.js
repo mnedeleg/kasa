@@ -3,7 +3,10 @@ import React, { useEffect, useState } from 'react'
 // import {useState} from "react-router-dom";
 import {useParams,  useNavigate} from "react-router-dom";
 import appartementListData from "../../data/kasa-datas.json";
-import Appartment from "../Appartment/index";
+import { FaAngleRight } from "react-icons/fa";
+import { FaAngleLeft } from "react-icons/fa";
+
+// import Appartment from "../Appartment/index";
 
 const Carousel = ({ slides }) => {
     const [appt, setAppt] = useState(null)
@@ -29,8 +32,8 @@ const Carousel = ({ slides }) => {
                 <img src= {slides[current]} alt='slides image '/>
             </div>    
             <div>
-                <button onClick={prevPicture}>Prev</button>
-                <button onClick={nextPicture} >Next</button>
+                <FaAngleLeft className='left-arrow' onClick={prevPicture}/>
+                <FaAngleRight className='right-arrow' onClick={nextPicture}/>
             </div>
         </div>
 

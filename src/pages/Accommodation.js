@@ -47,9 +47,9 @@ const SingleAppartment = () => {
          <h1> {appt.title} </h1>            
          <p> {appt.location} </p>    
          <p>{ appt.tag} </p>     
-         <div><Collapse/></div>
-         <p> {appt.description} </p>
-         <p>{ appt.equipments} </p>            
+         <div><Collapse test={appt.description}/></div>
+         {/* <p> {appt.description} </p>
+         <p>{ appt.equipments} </p>             */}
          <p> {appt.rating} </p>
          <div>
             <span class="fa-solid fa-star"></span>
