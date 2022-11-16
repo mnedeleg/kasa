@@ -6,7 +6,7 @@ import AppartmentList from "../components/Appartment/AppartmentList"
 const Home = () => {
 
     return (
-        <div>
+        <div className='home'>
             <Banner/>
             <AppartmentList/>
         </div>

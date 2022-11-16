@@ -12,10 +12,10 @@ const Index = ({appart}) => {
 
     return (
         
-        <div className='single-flat  color-gradient'>
-            <Link to={`/logement/${appart.id}`} className='single-flat'>
+        <div className='single-flat'>
+            <Link to={`/logement/${appart.id}`} className='single-flat-link'>
                 
-                <div>
+                <div className='single-flat-image-container'>
                     
                     <img className='single-flat-img' src={appart.cover} alt= {appart.title}/>
                     

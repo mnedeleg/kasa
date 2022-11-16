@@ -5,7 +5,8 @@ import {useParams,  useNavigate} from "react-router-dom";
 import appartementListData from "../data/kasa-datas.json"
 import Appartment from "../components/Appartment/index"
 import Carousel from "../components/Appartment/Carousel"
-import PictureTab from "../data/kasa-datas.json"
+import picturesTab from "../data/kasa-datas.json"
+import Collapse from "../components/Appartment/Collapse"
 
 const SingleAppartment = () => {
     const [appt, setAppt] = useState(null)
@@ -30,7 +31,7 @@ const SingleAppartment = () => {
     <div>
       
         
-      <Carousel slides ={PictureTab}/>
+      <Carousel slides ={appt.pictures}/>
 
 {/*          
             { appartementListData && appartementListData.map( data => {
@@ -46,6 +47,7 @@ const SingleAppartment = () => {
          <h1> {appt.title} </h1>            
          <p> {appt.location} </p>    
          <p>{ appt.tag} </p>     
+         <div><Collapse/></div>
          <p> {appt.description} </p>
          <p>{ appt.equipments} </p>            
          <p> {appt.rating} </p>
