@@ -6,7 +6,8 @@ import appartementListData from "../data/kasa-datas.json"
 import Appartment from "../components/Appartment/index"
 import Carousel from "../components/Appartment/Carousel"
 import picturesTab from "../data/kasa-datas.json"
-import Collapse from "../components/Appartment/Collapse"
+import CollapseDescription from "../components/Appartment/CollapseDescription"
+import CollapseEquipments from "../components/Appartment/CollapseEquipments";
 
 const SingleAppartment = () => {
     const [appt, setAppt] = useState(null)
@@ -22,10 +23,6 @@ const SingleAppartment = () => {
 
     if(appt === null) return null;
     
-    
-    
-  
-
     return(
         
     <div className='home'>
@@ -36,7 +33,8 @@ const SingleAppartment = () => {
          <h1> {appt.title} </h1>            
          <p> {appt.location} </p>    
          <p>{ appt.tag} </p>     
-         <div><Collapse test={appt.description}/></div>
+         <div><CollapseDescription carouselDescription={appt.description}/></div>
+         <div><CollapseEquipments carouselEquipments={appt.equipments}/></div>
          {/* <p> {appt.description} </p>
          <p>{ appt.equipments} </p>             */}
          <p> {appt.rating} </p>

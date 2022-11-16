@@ -4,20 +4,19 @@ import { FaAngleUp } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 
 
-const Collapse = ({ test }) => {
+const CollapseDescription = ({ carouselDescription }) => {
 
   const [current, setCurrent] = useState(0);
-  const collapseDescription = test;
+  const collapseDescription = carouselDescription;
 
-  console.log(test)
+  console.log(carouselDescription)
  
   return (
       <div>
         <div>Description</div>
         <div>{collapseDescription}</div>
-       
       </div>
 
   )};
 
-export default Collapse
+export default CollapseDescription
