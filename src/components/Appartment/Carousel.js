@@ -22,9 +22,9 @@ const Carousel = ({ slides }) => {
         setCurrent(current === 0 ? length -1 : current - 1)
     }
 
-    if(!Array.isArray(picturesTab) || picturesTab.length <= 0 ) {
-        return null;
-    }
+    // if(!Array.isArray(picturesTab) || picturesTab.length <= 0 ) {
+    //     return null;
+    // }
    
     return (
         <div>

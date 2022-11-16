@@ -1,24 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
 import appartementListData from "../../data/kasa-datas.json";
 import { FaAngleUp } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 
 
-function collapse(test) {
+const Collapse = ({ test }) => {
 
-    const collapseDescription = test;
+  const [current, setCurrent] = useState(0);
+  const collapseDescription = test;
 
-    console.log(test);
-
-
+  console.log(test)
+ 
   return (
-    // <div>collapse</div>
-    <div>
-     
-     
+      <div>
+        <div>Description</div>
+        <div>{collapseDescription}</div>
+       
+      </div>
 
-    </div>
-  )
-}
+  )};
 
-export default collapse
+export default Collapse

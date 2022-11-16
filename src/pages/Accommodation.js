@@ -32,17 +32,6 @@ const SingleAppartment = () => {
       
         
       <Carousel slides ={appt.pictures}/>
-
-{/*          
-            { appartementListData && appartementListData.map( data => {
-                return (
-                    <div>
-                        <img src= {data.pictures} />
-                    </div>
-                )
-            }   
-            )} */}
-              {/* <img src={[appt.pictures, 1]} alt = "photos appartements" />; */}
        
          <h1> {appt.title} </h1>            
          <p> {appt.location} </p>    
