@@ -28,7 +28,7 @@ const SingleAppartment = () => {
 
     return(
         
-    <div>
+    <div className='home'>
       
         
       <Carousel slides ={appt.pictures}/>

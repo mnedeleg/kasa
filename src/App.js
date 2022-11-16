@@ -14,6 +14,7 @@ import "./components/Appartment/appartment.style.css";
 import "./components/banner/banner.css";
 import "./components/PageNotFound/PageNotFound.css";
 import "../src/components/Footer/Footer.css";
+import "../src/components/Appartment/carousel.css";
 
 
 function App() {

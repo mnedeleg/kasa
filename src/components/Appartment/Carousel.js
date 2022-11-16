@@ -28,8 +28,8 @@ const Carousel = ({ slides }) => {
    
     return (
         <div>
-            <div> 
-                <img src= {slides[current]} alt='slides image '/>
+            <div className='img-container'> 
+                <img className= "img-containter-single" src= {slides[current]} alt='slides image '/>
             </div>    
             <div>
                 <FaAngleLeft className='left-arrow' onClick={prevPicture}/>
