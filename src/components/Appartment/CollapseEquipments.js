@@ -4,18 +4,29 @@ import { FaAngleUp } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 
 
-const CollapseEquipments = ({ carouselEquipments }) => {
+const CollapseEquipments = ({ carouselEquipments, title }) => {
 
-  const [current, setCurrent] = useState(0);
   const collapseEquipments = carouselEquipments;
 
   console.log(carouselEquipments)
  
   return (
-      <div>
-        <div>Équipement</div>
+    <div className='collapse'>
+
+    <div className='collapse-heading'>
+      <div className='collapse-heading-container'>
+        <div>{title}</div>
+        <span>{<FaAngleDown/>}</span>
+      </div>
+    </div>
+
+    <div className='collapse-content'>
+      <div className='collapse-content-container'>
         <div>{collapseEquipments}</div>
       </div>
+    </div>
+
+  </div>
 
   )};
 
