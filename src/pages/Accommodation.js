@@ -32,9 +32,11 @@ const SingleAppartment = () => {
        
          <h1> {appt.title} </h1>            
          <p> {appt.location} </p>    
-         <p>{ appt.tag} </p>     
-         <div><CollapseDescription carouselDescription={appt.description} title="Description"/></div>
-         <div><CollapseEquipments carouselEquipments={appt.equipments} title="Equipements"/></div>
+         <p>{ appt.tag} </p>  
+         <div className='all-collapse-section'>
+            <div className='collapse-section'><CollapseDescription carouselDescription={appt.description} title="Description"/></div>
+            <div className='collapse-section'><CollapseEquipments carouselEquipments={appt.equipments} title="Equipements"/></div>
+        </div>
          {/* <p> {appt.description} </p>
          <p>{ appt.equipments} </p>             */}
          <p> {appt.rating} </p>

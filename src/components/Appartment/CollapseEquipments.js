@@ -11,7 +11,7 @@ const CollapseEquipments = ({ carouselEquipments, title }) => {
   console.log(carouselEquipments)
  
   return (
-    <div className='collapse'>
+    <div className='collapse-section'>
 
     <div className='collapse-heading'>
       <div className='collapse-heading-container'>

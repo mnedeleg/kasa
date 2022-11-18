@@ -21,7 +21,7 @@ const CollapseDescription = ({ carouselDescription, title }) => {
   console.log(carouselDescription)
  
   return (
-      <div className='collapse'>
+      <div className='collapse-section'>
 
         <div className='collapse-heading'>
           <div className='collapse-heading-container'>
