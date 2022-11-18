@@ -7,16 +7,17 @@ import { FaAngleDown } from "react-icons/fa";
 const CollapseDescription = ({ carouselDescription, title }) => {
 
   const collapseDescription = carouselDescription ;
-  
-  const [clicked, setClicked] = useState(false)
-  const toggle = (i) => {
-    if(clicked === i) {
-     
-      return setClicked(null)
-    }
-    setClicked(i)
+  const [active, setActive] = useState(carouselDescription)
 
-  }
+  // const [clicked, setClicked] = useState(false)
+  // const toggle = (i) => {
+  //   if(clicked === i) {
+     
+  //     return setClicked(null)
+  //   }
+  //   setClicked(i)
+
+  // }
 
   console.log(carouselDescription)
  
@@ -26,11 +27,12 @@ const CollapseDescription = ({ carouselDescription, title }) => {
         <div className='collapse-heading'>
           <div className='collapse-heading-container'>
             <div>{title}</div>
-            <span>{<FaAngleDown/>}</span>
+            <span className= "testUp" onClick={() => setActive(carouselDescription)}>{<FaAngleUp/>}</span>
+            <span className= "testDown" onClick={() => setActive(carouselDescription)}>{<FaAngleDown/>}</span>
           </div>
         </div>
 
-        <div className='collapse-content'>
+        <div className={(active === carouselDescription ? "show" : "" + "collapse-content")}>
           <div className='collapse-content-container'>
             <div>{collapseDescription}</div>
           </div>

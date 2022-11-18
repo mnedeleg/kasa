@@ -10,6 +10,8 @@ import CollapseDescription from "../components/Appartment/CollapseDescription"
 import CollapseEquipments from "../components/Appartment/CollapseEquipments";
 
 const SingleAppartment = () => {
+    // const [active, setActive] = useState("title")
+
     const [appt, setAppt] = useState(null)
     const { id } = useParams()
     const navigate = useNavigate();

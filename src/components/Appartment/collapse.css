@@ -38,18 +38,33 @@ flex-direction: column;
     z-index: -1;
     bottom:20px;
     width:100%;
- 
-
-
+    background: #F7F7F7;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+    opacity: 0;
+    height: 0;
 }
 
-.collapse-content-container{
-    width: 100%;
+.collapse-content-container {
     font-size: 18px;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     color: #FF6060;
-    background: #F7F7F7;
     padding: 30px 10px 20px 10px;
     border-radius: 10px;
+}
+
+.show{
+    height: 200px;
+    opacity: 1;
+    overflow: hidden;
+    transition : all 600ms ease-in-out;
+}
+
+.testUp{
+    color: blue;
+}
+
+.testDown{
+    
 }
