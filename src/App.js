@@ -16,6 +16,7 @@ import "./components/PageNotFound/PageNotFound.css";
 import "../src/components/Footer/Footer.css";
 import "../src/components/Appartment/carousel.css";
 import "../src/components/Appartment/collapse.css"
+import "./pages/accommodation.css";
 
 
 function App() {

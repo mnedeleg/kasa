@@ -10,7 +10,8 @@ import CollapseDescription from "../components/Appartment/CollapseDescription"
 import CollapseEquipments from "../components/Appartment/CollapseEquipments";
 
 const SingleAppartment = () => {
-    // const [active, setActive] = useState("title")
+    const [active, setActive] = useState("title")
+
 
     const [appt, setAppt] = useState(null)
     const { id } = useParams()
@@ -34,13 +35,21 @@ const SingleAppartment = () => {
        
          <h1> {appt.title} </h1>            
          <p> {appt.location} </p>    
-         <p>{ appt.tag} </p>  
+         <div>{ appt.tags.map((tag) => <p className='test'>{tag}</p>)} </div>
+        
          <div className='all-collapse-section'>
-            <div className='collapse-section'><CollapseDescription carouselDescription={appt.description} title="Description"/></div>
-            <div className='collapse-section'><CollapseEquipments carouselEquipments={appt.equipments} title="Equipements"/></div>
-        </div>
-         {/* <p> {appt.description} </p>
-         <p>{ appt.equipments} </p>             */}
+    
+            <CollapseDescription title="Description">
+                 {appt.description}
+            </CollapseDescription>
+
+            <CollapseDescription title="Équipements">
+                <ul>
+                    {appt.equipments.map((equipment) => <li>{equipment}</li> )} 
+                </ul>
+            </CollapseDescription>
+         </div>
+    
          <p> {appt.rating} </p>
          <div>
             <span class="fa-solid fa-star"></span>
