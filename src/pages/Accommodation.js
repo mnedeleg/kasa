@@ -26,16 +26,37 @@ const SingleAppartment = () => {
 
     if(appt === null) return null;
     
+    const host = Object.values(appt.host)
+    const hostName = host[0]
+    const hostPicture = host[1]
+  
     return(
         
     <div className='home'>
       
         
       <Carousel slides ={appt.pictures}/>
-       
-         <h1> {appt.title} </h1>            
-         <p> {appt.location} </p>    
-         <div>{ appt.tags.map((tag) => <p className='test'>{tag}</p>)} </div>
+
+      <div>
+        <div>
+            <h1> {appt.title} </h1>            
+            <p> {appt.location} </p>
+        </div>
+            
+        <div>
+            <div>
+                {hostName}
+            </div>
+            <img 
+                src= {hostPicture} alt="photo de profil de l'hôtesse Nathalie Jean">
+            </img>
+         </div>
+      </div>
+      
+        
+         <div>
+            { appt.tags.map((tag) => <p className='test'>{tag}</p>)} 
+         </div>
         
          <div className='all-collapse-section'>
     
@@ -50,6 +71,7 @@ const SingleAppartment = () => {
             </CollapseDescription>
          </div>
     
+
          <p> {appt.rating} </p>
          <div>
             <span class="fa-solid fa-star"></span>
