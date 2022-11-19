@@ -38,9 +38,9 @@ const SingleAppartment = () => {
       <Carousel slides ={appt.pictures}/>
 
       <div className='accomodation-heading'>
-        <div>
-            <h1> {appt.title} </h1>            
-            <p> {appt.location} </p>
+        <div  className='accomodation-heading-title'>
+            <h1 className='accomodation-title'> {appt.title} </h1>            
+            <p className='accomodation-location'> {appt.location} </p>
         </div>
             
         <div className='host-section'>
