@@ -2,6 +2,9 @@
 
 body{
 }
+.logo-img-nav{
+    width: 160px;
+}
 .nav-1{
     display: flex;
     justify-content: space-between;

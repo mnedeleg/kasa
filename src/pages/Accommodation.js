@@ -37,25 +37,25 @@ const SingleAppartment = () => {
         
       <Carousel slides ={appt.pictures}/>
 
-      <div>
+      <div className='accomodation-heading'>
         <div>
             <h1> {appt.title} </h1>            
             <p> {appt.location} </p>
         </div>
             
-        <div>
-            <div>
+        <div className='host-section'>
+            <div className='host-section-name'>
                 {hostName}
             </div>
             <img 
-                src= {hostPicture} alt="photo de profil de l'hôtesse Nathalie Jean">
+                src= {hostPicture} className='host-section-img' alt="photo de profil de l'hôtesse Nathalie Jean">
             </img>
          </div>
       </div>
       
         
-         <div>
-            { appt.tags.map((tag) => <p className='test'>{tag}</p>)} 
+         <div className='tag'>
+            { appt.tags.map((tag) => <p className='tag-style'>{tag}</p>)} 
          </div>
         
          <div className='all-collapse-section'>
