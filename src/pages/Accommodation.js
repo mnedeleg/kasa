@@ -53,10 +53,19 @@ const SingleAppartment = () => {
          </div>
       </div>
       
-        
+      <div className='tag-star'>
          <div className='tag'>
             { appt.tags.map((tag) => <p className='tag-style'>{tag}</p>)} 
          </div>
+
+         <div className='star'>
+            <span class="fa-solid fa-star"></span>
+            <span class="fa-solid fa-star"></span>
+            <span class="fa-solid fa-star"></span>
+            <span class="fa-solid fa-star"></span>
+            <span class="fa-solid fa-star"></span>
+         </div>
+     </div>
         
          <div className='all-collapse-section'>
     
@@ -66,20 +75,11 @@ const SingleAppartment = () => {
 
             <CollapseDescription title="Équipements">
                 <ul>
-                    {appt.equipments.map((equipment) => <li>{equipment}</li> )} 
+                    {appt.equipments.map((equipment) => <li className='equipment-style'>{equipment}</li> )} 
                 </ul>
             </CollapseDescription>
          </div>
-    
 
-         <p> {appt.rating} </p>
-         <div>
-            <span class="fa-solid fa-star"></span>
-            <span class="fa-solid fa-star"></span>
-            <span class="fa-solid fa-star"></span>
-            <span class="fa-solid fa-star"></span>
-            <span class="fa-solid fa-star"></span>
-         </div>
     </div> 
     )
 }
