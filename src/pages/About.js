@@ -12,25 +12,49 @@ const AboutPage = () => {
                     
                     <div className="collapse-about" >
                         <CollapseDescription title="Fiabilité" >
-                            <div>blalala</div>
+                           {AboutInfo.map(info =>{
+                               return (
+                                   <div>
+                                       {info.fiabilité}
+                                   </div>
+                               )
+                           })}
                         </CollapseDescription>
                     </div>
                 
                     <div className="collapse-about" >
-                        <CollapseDescription title="Respect">
-                            <div>blalala</div>
+                        <CollapseDescription title="Bienveillance">
+                            {AboutInfo.map(info =>{
+                                return (
+                                    <div>
+                                        {info.bienveillance}
+                                    </div>
+                                )
+                            })}  
                         </CollapseDescription>
                     </div>
 
                     <div className="collapse-about" >
                         <CollapseDescription title="Service">
-                            <div>blalala</div>
+                            {AboutInfo.map(info =>{
+                                return (
+                                    <div>
+                                        {info.service}
+                                    </div>
+                                )
+                            })}
                         </CollapseDescription>
                     </div>
 
                     <div className="collapse-about" >
                         <CollapseDescription title="Sécurité">
-                            <div>blalala</div>
+                            {AboutInfo.map(info =>{
+                                return (
+                                    <div>
+                                        {info.secu}
+                                    </div>
+                                )
+                            })}
                         </CollapseDescription>
                     </div>
             </div>
