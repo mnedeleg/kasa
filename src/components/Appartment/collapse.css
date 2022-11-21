@@ -58,6 +58,7 @@ flex-direction: column;
     height: 200px;
     opacity: 1;
     overflow: hidden;
+    height: auto;
     transition : all 600ms ease-in-out;
     background-color: #F7F7F7;
     border-radius: 10px;
