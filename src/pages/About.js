@@ -6,8 +6,8 @@ const AboutPage = () => {
 
    
     return (
-        <div>
-            <div className="banner"></div>
+        <div className="about">
+            <div className="banner-about"></div>
                 <div className="all-collapse-about">
                     
                     <div className="collapse-about" >
