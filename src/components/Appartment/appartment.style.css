@@ -60,4 +60,12 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+    .all-flat{
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 1fr;
+        background-color: white;
+        padding:0px;
+    }
 
+}

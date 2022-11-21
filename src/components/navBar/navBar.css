@@ -43,7 +43,7 @@ body{
     border-bottom: 2px solid #FF6060;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .logo-img-nav{
         width: 100px;
     }

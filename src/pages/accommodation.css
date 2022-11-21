@@ -86,3 +86,14 @@ ul{
 .star{
     margin-top: 30px;
 }
+
+@media screen and (max-width: 600px) {
+    .tag-star{
+        display: flex;
+        justify-content: space-between;
+    }
+    .star{
+        margin-top: 30px;
+    }
+
+}
