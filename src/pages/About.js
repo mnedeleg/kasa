@@ -1,10 +1,8 @@
-import About from "../components/About/About"
 import AboutInfo from "../data/about-data.json"
 import CollapseDescription from "../components/Appartment/CollapseDescription"
 
 const AboutPage = () => {
 
-   
     return (
         <div className="about">
             <div className="banner-about"></div>

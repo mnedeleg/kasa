@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Accommodation from "./pages/Accommodation";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
-import User from "../src/user/index";
 import NavBar from "../src/components/navBar/navBar";
 import singleAppartment from './components/Appartment/singleCardAppartment';
 import FooterPage from "../src/components/Footer/Footer";
