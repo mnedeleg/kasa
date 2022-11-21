@@ -81,17 +81,4 @@ const SingleAppartment = () => {
     )
 }
 
-
-{/* const SingleCardFlat = () => {
-
-    return (
-        <div>
-            <Accommodation/>
-        </div>
-    );
-} */}
-
-
-
-
 export default SingleAppartment;
