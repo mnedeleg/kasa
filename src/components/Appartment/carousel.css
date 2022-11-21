@@ -13,18 +13,18 @@
     border-radius: 25px;
 }
 
-.left-arrow{
-    font-size: 80px;
+.left-arrow {
+    font-size: 60px;
     position:absolute;
     top:360px;
-    left: 20px;
+    left: 40px;
     color: white;
 }
 
 .right-arrow{
-    font-size: 80px;
+    font-size: 60px;
     position:absolute;
     top:360px;
-    right:20px;
+    right:40px;
     color: white;
 }

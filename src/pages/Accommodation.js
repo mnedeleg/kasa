@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {FaArrowAltRight, FaArrowAltLeft } from 'react-icons'
+import { FaStar } from 'react-icons/fa'
 
 import {useParams,  useNavigate} from "react-router-dom";
 import appartementListData from "../data/kasa-datas.json"
@@ -7,6 +7,7 @@ import Appartment from "../components/Appartment/index"
 import Carousel from "../components/Appartment/Carousel"
 import picturesTab from "../data/kasa-datas.json"
 import CollapseDescription from "../components/Appartment/CollapseDescription"
+import StarRating from '../components/Appartment/Star';
 
 const SingleAppartment = () => {
     const [active, setActive] = useState("title")
@@ -50,6 +51,7 @@ const SingleAppartment = () => {
                 src= {hostPicture} className='host-section-img' alt="photo de profil de l'hôtesse Nathalie Jean">
             </img>
          </div>
+       
       </div>
       
       <div className='tag-star'>
@@ -58,11 +60,7 @@ const SingleAppartment = () => {
          </div>
 
          <div className='star'>
-            <span class="fa-solid fa-star"></span>
-            <span class="fa-solid fa-star"></span>
-            <span class="fa-solid fa-star"></span>
-            <span class="fa-solid fa-star"></span>
-            <span class="fa-solid fa-star"></span>
+         <StarRating/>
          </div>
      </div>
         

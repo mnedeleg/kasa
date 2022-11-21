@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react'
 // import {useState} from "react-router-dom";
 import {useParams,  useNavigate} from "react-router-dom";
 import appartementListData from "../../data/kasa-datas.json";
-import { FaAngleRight } from "react-icons/fa";
-import { FaAngleLeft } from "react-icons/fa";
+import { FaChevronCircleRight, FaChevronRight} from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
 
 // import Appartment from "../Appartment/index";
 
@@ -32,8 +32,8 @@ const Carousel = ({ slides }) => {
                 <img className= "img-containter-single" src= {slides[current]} alt='slides image '/>
             </div>    
             <div>
-                <FaAngleLeft className='left-arrow' onClick={prevPicture}/>
-                <FaAngleRight className='right-arrow' onClick={nextPicture}/>
+                <FaChevronLeft className='left-arrow' onClick={prevPicture}/>
+                <FaChevronRight className='right-arrow' onClick={nextPicture}/>
             </div>
         </div>
 

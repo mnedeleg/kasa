@@ -5,7 +5,6 @@ import Accommodation from "./pages/Accommodation";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
 import NavBar from "../src/components/navBar/navBar";
-import singleAppartment from './components/Appartment/singleCardAppartment';
 import FooterPage from "../src/components/Footer/Footer";
 
 import "./components/navBar/navBar.css";
