@@ -8,26 +8,12 @@ const StarRating = () => {
 
     return (
         <div className='all-stars'>
-            <div className='star'>
-                <FaStar/>
-            </div>
+            {[1, 2, 3, 4, 5].map((index) => {
+                return(
+                    <FaStar/>
+                )
+            })}
 
-            <div className='star'>
-                <FaStar/>
-            </div>
-          
-            <div className='star'>
-                <FaStar/>
-            </div>
-            
-            <div className='star'>
-                <FaStar/>
-            </div>
-            
-            <div className='star'>
-                <FaStar/>
-            </div>
-        
         </div>
     );
 }

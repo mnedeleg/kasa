@@ -27,7 +27,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}></Route>,
       <Route path="/logement/:id" element={<Accommodation/>}>
-        {/* <singleAppartment/> */}
       </Route>,
       <Route path="/a-propos" element={<About/>}></Route>,
       <Route path="*" element={<PageNotFound/>}></Route>
