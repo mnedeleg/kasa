@@ -7,7 +7,6 @@ import Appartment from "../components/Appartment/index"
 import Carousel from "../components/Appartment/Carousel"
 import picturesTab from "../data/kasa-datas.json"
 import CollapseDescription from "../components/Appartment/CollapseDescription"
-import CollapseEquipments from "../components/Appartment/CollapseEquipments";
 
 const SingleAppartment = () => {
     const [active, setActive] = useState("title")
@@ -69,11 +68,11 @@ const SingleAppartment = () => {
         
          <div className='all-collapse-section'>
     
-            <CollapseDescription title="Description">
+            <CollapseDescription title="Description" className="collapse-logement">
                  {appt.description}
             </CollapseDescription>
 
-            <CollapseDescription title="Équipements">
+            <CollapseDescription title="Équipements" className="collapse-logement">
                 <ul>
                     {appt.equipments.map((equipment) => <li className='equipment-style'>{equipment}</li> )} 
                 </ul>
