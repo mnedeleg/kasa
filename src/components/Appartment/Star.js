@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa";
 import "../Appartment/star.css"
 
 const StarRating = () => {
+    
 
     return (
         <div className='all-stars'>
@@ -13,7 +14,6 @@ const StarRating = () => {
                     <FaStar/>
                 )
             })}
-
         </div>
     );
 }

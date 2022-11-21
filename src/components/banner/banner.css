@@ -34,3 +34,20 @@
     font-family: Montserrat, sans-serif;
     font-weight: 500;
 }
+
+@media screen and (max-width: 600px) {
+    .banner-title{
+        text-align:left;
+        font-size: 24px;
+        font-weight: 400;
+        padding:20px;
+    }
+
+    .banner{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        text-align: left;
+        height: 120px;
+    }
+
+}
