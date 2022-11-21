@@ -14,7 +14,6 @@
 }
 
 
-
 .collapse-heading{
 display: flex;
 flex-direction: column;
@@ -39,7 +38,7 @@ flex-direction: column;
     position: relative;
     z-index: -1;
     bottom:20px;
-    /* width:100%; */
+    width:100%;
     overflow: hidden;
     transition: all 600ms ease-in-out;
     opacity: 0;

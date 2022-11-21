@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import BannerImg from "../../image/banner-img.jpg";
 
 function Banner() {
     return (

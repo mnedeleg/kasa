@@ -6,34 +6,33 @@ const AboutPage = () => {
 
    
     return (
-        <div className="all-collapse-about">
-            
-            <div className="collapse-about" >
-             <CollapseDescription title="Fiabilité" >
-     
-            <div>blalala</div>
-            </CollapseDescription>
-            </div>
-           
-            <div className="collapse-about" >
-            <CollapseDescription title="Respect">
-     
-            <div>blalala</div>
-            </CollapseDescription>
-            </div>
+        <div>
+            <div className="banner"></div>
+                <div className="all-collapse-about">
+                    
+                    <div className="collapse-about" >
+                        <CollapseDescription title="Fiabilité" >
+                            <div>blalala</div>
+                        </CollapseDescription>
+                    </div>
+                
+                    <div className="collapse-about" >
+                        <CollapseDescription title="Respect">
+                            <div>blalala</div>
+                        </CollapseDescription>
+                    </div>
 
-            <div className="collapse-about" >
-            <CollapseDescription title="Service">
-            <div>blalala</div>
-        
-            </CollapseDescription>
-            </div>
+                    <div className="collapse-about" >
+                        <CollapseDescription title="Service">
+                            <div>blalala</div>
+                        </CollapseDescription>
+                    </div>
 
-            <div className="collapse-about" >
-            <CollapseDescription title="Sécurité">
-            <div>blalala</div>
-        
-            </CollapseDescription>
+                    <div className="collapse-about" >
+                        <CollapseDescription title="Sécurité">
+                            <div>blalala</div>
+                        </CollapseDescription>
+                    </div>
             </div>
         </div>
     );
