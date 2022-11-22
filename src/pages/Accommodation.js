@@ -60,7 +60,7 @@ const SingleAppartment = () => {
          </div>
 
          <div className='star'>
-         <StarRating/>
+         <StarRating rating={appt.rating}/>
          </div>
      </div>
         
