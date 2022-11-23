@@ -76,7 +76,10 @@
 }
 .tag{
     display: flex;
-    gap: 20px;
+    max-width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    
 }
 
 .equipment-style{
@@ -110,8 +113,8 @@ ul{
     }
     
     .tag{
-        flex-wrap:wrap;
-        ;
+    flex-wrap: wrap;
+        
     }
     .tag-star{
         display: flex;
@@ -123,8 +126,7 @@ ul{
          padding: 1px 20px;
          height: 20px;
          width: 120px;
-         margin-top: 10px;
-         margin-bottom: 10px;
+
      }
 
 }
