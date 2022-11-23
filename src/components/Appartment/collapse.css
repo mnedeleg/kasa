@@ -3,7 +3,7 @@
 .all-collapse-section{
     display: flex;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     gap: 50px;
 }
 
@@ -62,4 +62,12 @@ flex-direction: column;
     transition : all 600ms ease-in-out;
     background-color: #F7F7F7;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .all-collapse-section{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

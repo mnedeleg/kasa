@@ -6,3 +6,10 @@
 .star {
     font-size: 30px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .star {
+        font-size: 18px;
+    }
+}

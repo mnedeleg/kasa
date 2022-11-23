@@ -64,12 +64,6 @@ const SingleAppartment = () => {
     </div>
 
      
-       
-      
-      
-     
-   
-    
         
          <div className='all-collapse-section'>
     

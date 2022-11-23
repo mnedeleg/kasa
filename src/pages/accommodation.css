@@ -96,10 +96,6 @@ ul{
     justify-content: space-between;
 }
 
-.star{
-    margin-top: 30px;
-}
-
 @media screen and (max-width: 768px) {
 
     .intro{
@@ -108,10 +104,23 @@ ul{
 
     .host-section{
         display: flex;
-        justify-content: space-between;
         flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+       
     }
-    
+
+    .accomodation-title{
+        color: #FF6060;
+        font-size: 18px;
+    }
+
+
+    .accomodation-location{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
     .tag{
     flex-wrap: wrap;
         
@@ -128,5 +137,17 @@ ul{
          width: 120px;
 
      }
+     
+     .host-section-name{
+        font-size: 12px;
+     }
+
+     .host-section-img{
+        width: 40px;
+        border-radius: 100px;
+    }
+    .namePhoto{
+      align-items: center;
+    }
 
 }
