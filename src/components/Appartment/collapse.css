@@ -83,3 +83,11 @@ flex-direction: column;
     }
      
 }
+@media screen and (min-width:768px)and (max-width:992px) {
+
+
+    .all-collapse-section{
+        flex-direction: row;
+        gap: 20px;
+    }
+}
