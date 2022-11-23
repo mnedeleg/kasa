@@ -1,14 +1,19 @@
+.carousel{
+    height: 500px;
+
+}
 .img-container{
     position: relative;
     display: flex;
     margin-top: 20px;
     width: 100%;
     height: 100%;
+    
 }
 
 .img-containter-single{
     width: 100%;
-    height: 500px;
+    height: 100%;
     object-fit: cover;
     border-radius: 25px;
 }
@@ -27,4 +32,24 @@
     top:360px;
     right:40px;
     color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .carousel{
+        height: 250px;
+        }
+
+
+    .left-arrow {
+        font-size: 30px;
+        top:200px;
+    }
+    
+    .right-arrow{
+        font-size: 30px;
+        top:200px;
+    }
+
 }

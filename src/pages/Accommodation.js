@@ -36,33 +36,40 @@ const SingleAppartment = () => {
       
         
       <Carousel slides ={appt.pictures}/>
-
+    <div className='intro'>
       <div className='accomodation-heading'>
         <div  className='accomodation-heading-title'>
             <h1 className='accomodation-title'> {appt.title} </h1>            
             <p className='accomodation-location'> {appt.location} </p>
         </div>
-            
-        <div className='host-section'>
-            <div className='host-section-name'>
-                {hostName}
-            </div>
-            <img 
-                src= {hostPicture} className='host-section-img' alt="photo de profil de l'hôtesse Nathalie Jean">
-            </img>
-         </div>
-       
-      </div>
-      
-      <div className='tag-star'>
-         <div className='tag'>
+        <div className='tag'>
             { appt.tags.map((tag) => <p className='tag-style'>{tag}</p>)} 
          </div>
-
-         <div className='star'>
-         <StarRating rating={appt.rating}/>
-         </div>
      </div>
+            
+        <div className='host-section'>
+            <div className='namePhoto'>
+                <div className='host-section-name'>
+                    {hostName}
+                </div>
+                <img 
+                    src= {hostPicture} className='host-section-img' alt="photo de profil de l'hôtesse Nathalie Jean">
+                </img>
+                </div>
+
+            <div className='star'>
+              <StarRating rating={appt.rating}/>
+            </div>
+         </div>
+    </div>
+
+     
+       
+      
+      
+     
+   
+    
         
          <div className='all-collapse-section'>
     

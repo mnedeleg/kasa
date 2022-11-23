@@ -27,7 +27,7 @@ const Carousel = ({ slides }) => {
     // }
    
     return (
-        <div>
+        <div className='carousel'>
             <div className='img-container'> 
                 <img className= "img-containter-single" src= {slides[current]} alt='slides image '/>
             </div>    

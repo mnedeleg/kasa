@@ -1,3 +1,8 @@
 .all-stars{
     display: flex;
+    gap: 10px;
+}
+
+.star {
+    font-size: 30px;
 }

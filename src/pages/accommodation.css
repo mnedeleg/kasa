@@ -1,53 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-.tag-style{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    background-color: #FF6060;
-    color: white;
-    font-family: Montserrat, sans-serif;
-    height: 25px;
-    padding: 1px 40px;
-    border-radius: 80px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-}
-.tag{
-    display: flex;
-    gap: 20px;
-  
-}
-.accomodation-heading{
+.intro{
     display: flex;
     justify-content: space-between;
-}
-
-.accomodation-heading-title{
- 
- margin-top:20px
+    margin-bottom: 30px;
 }
 
 .host-section{
     margin-top: 20px;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
     gap: 20px;
 }
 
-.host-section-name{
-    width: min-content;
-    color: #FF6060;
-    font-size: 18px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
+.accomodation-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.host-section-img{
-    width: 70px;
-    border-radius: 100px;
+.accomodation-heading-title{
+ margin-top:20px;
+ margin-bottom:20px;
 }
 
 .accomodation-title{
@@ -69,6 +43,42 @@
     margin-top: 10px;
 }
 
+.namePhoto{
+    display: flex;
+    gap: 10px;
+}
+
+.host-section-name{
+    width: min-content;
+    color: #FF6060;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+.host-section-img{
+    width: 70px;
+    border-radius: 100px;
+}
+
+.tag-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    height: 25px;
+    padding: 1px 40px;
+    border-radius: 5px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+.tag{
+    display: flex;
+    gap: 20px;
+}
+
 .equipment-style{
     list-style-type:none;
 }
@@ -87,7 +97,12 @@ ul{
     margin-top: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .tag{
+        flex-wrap: wrap;
+        ;
+    }
+
     .tag-star{
         display: flex;
         justify-content: space-between;
@@ -95,5 +110,12 @@ ul{
     .star{
         margin-top: 30px;
     }
+    .tag-style{
+         font-size: 12px;
+         height: 20px;
+         width: 120px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+     }
 
 }
