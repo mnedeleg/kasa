@@ -41,3 +41,16 @@ width: 100px;
     font-size: 12px;
   }
 }
+
+@media screen and (min-width:768px)and (max-width:992px) {
+
+        .footer{
+        
+           height: 100px;
+            bottom: 0;
+        }
+        .footer-text{
+            font-size: 12px;
+          }
+}
+        

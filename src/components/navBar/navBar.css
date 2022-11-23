@@ -25,7 +25,7 @@ body{
     
     list-style-type: none;
     color: #FF6060;
-    font-size: 17px;
+    font-size: 24px;
     font-family: Montserrat, sans-serif;
     font-weight: 300;
 }
@@ -47,5 +47,20 @@ body{
     .logo-img-nav{
         width: 100px;
     }
-
+    .item{
+        font-size: 13px;
+        text-transform: uppercase;
+    }
 }
+ @media screen and (min-width:768px)and (max-width:992px) {
+ 
+    .logo-img-nav{
+        width: 120px;
+    }
+    .item{
+        font-size: 20px;
+        
+    }
+  
+}
+    
