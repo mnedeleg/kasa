@@ -55,7 +55,7 @@ const SingleAppartment = () => {
                 <img 
                     src= {hostPicture} className='host-section-img' alt="photo de profil de l'hôtesse Nathalie Jean">
                 </img>
-                </div>
+            </div>
 
             <div className='star'>
               <StarRating rating={appt.rating}/>
