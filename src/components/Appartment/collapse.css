@@ -2,28 +2,22 @@
 ul{
     padding: 0;
 }
-
 .all-collapse-section{
     display: flex;
     height: 100%;
     max-width: 100%;
     gap: 50px;
 }
-
 .collapse-section{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
-
 .collapse-heading{
 display: flex;
 flex-direction: column;
- width: 100%;
-
+width: 100%;
 }
-
 .collapse-heading-container {
     display: flex;
     justify-content: space-between;
@@ -35,7 +29,6 @@ flex-direction: column;
     color: white;
     background: #FF6060;
 }
-
 .collapse-content{
     display: flex;
     position: relative;
@@ -47,7 +40,6 @@ flex-direction: column;
     opacity: 0;
     height: 0;
 }
-
 .collapse-content-container {
     font-size: 18px;
     font-family: Montserrat, sans-serif;
@@ -56,7 +48,6 @@ flex-direction: column;
     padding: 30px 10px 20px 10px;
     border-radius: 10px;
 }
-
 .show{
     height: 200px;
     opacity: 1;
@@ -74,17 +65,16 @@ flex-direction: column;
         gap: 20px;
     }
     .collapse-heading-container {
-        padding: 5px;
         font-size: 13px;
+        padding: 5px;
     }
     .collapse-content-container {
         font-size: 12px;
         padding: 15px 10px 10px 10px;
     }
-     
 }
-@media screen and (min-width:768px)and (max-width:992px) {
 
+@media screen and (min-width:768px)and (max-width:992px) {
 
     .all-collapse-section{
         flex-direction: row;

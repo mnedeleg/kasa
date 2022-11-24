@@ -4,11 +4,11 @@ import CollapseDescription from "../components/Appartment/CollapseDescription"
 const AboutPage = () => {
 
     return (
-        <div className="about">
-            <div className="banner-about"></div>
-                <div className="all-collapse-about">
-                    
-                    <div className="collapse-about" >
+        <div className="about-main-page">
+            <div className="about-banner"></div>
+                <div className="about-collapse-all">  
+
+                    <div className="about-collapse" >
                         <CollapseDescription title="Fiabilité" >
                            {AboutInfo.map(info =>{
                                return (
@@ -20,7 +20,7 @@ const AboutPage = () => {
                         </CollapseDescription>
                     </div>
                 
-                    <div className="collapse-about" >
+                    <div className="about-collapse" >
                         <CollapseDescription title="Bienveillance">
                             {AboutInfo.map(info =>{
                                 return (
@@ -32,7 +32,7 @@ const AboutPage = () => {
                         </CollapseDescription>
                     </div>
 
-                    <div className="collapse-about" >
+                    <div className="about-collapse" >
                         <CollapseDescription title="Service">
                             {AboutInfo.map(info =>{
                                 return (
@@ -44,17 +44,18 @@ const AboutPage = () => {
                         </CollapseDescription>
                     </div>
 
-                    <div className="collapse-about" >
+                    <div className="about-collapse" >
                         <CollapseDescription title="Sécurité">
                             {AboutInfo.map(info =>{
                                 return (
                                     <div>
-                                        {info.secu}
+                                        {info.sécurité}
                                     </div>
                                 )
                             })}
                         </CollapseDescription>
                     </div>
+                    
             </div>
         </div>
     );

@@ -6,8 +6,6 @@ import appartementListData from "../../data/kasa-datas.json";
 import { FaChevronCircleRight, FaChevronRight} from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 
-// import Appartment from "../Appartment/index";
-
 const Carousel = ({ slides }) => {
     const [appt, setAppt] = useState(null)
     const [current, setCurrent] = useState(0);
@@ -22,21 +20,16 @@ const Carousel = ({ slides }) => {
         setCurrent(current === 0 ? length -1 : current - 1)
     }
 
-    // if(!Array.isArray(picturesTab) || picturesTab.length <= 0 ) {
-    //     return null;
-    // }
-   
     return (
         <div className='carousel'>
             <div className='img-container'> 
-                <img className= "img-containter-single" src= {slides[current]} alt='slides image '/>
+                <img className= "img-containter-single" src= {slides[current]} alt="images de l'intérieur de l'appartement"/>
             </div>    
             <div>
                 <FaChevronLeft className='left-arrow' onClick={prevPicture}/>
                 <FaChevronRight className='right-arrow' onClick={nextPicture}/>
             </div>
         </div>
-
     )};
 
 export default Carousel

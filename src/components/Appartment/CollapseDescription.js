@@ -13,7 +13,6 @@ const CollapseDescription = ({ children, title }) => {
  
   return (
       <div className='collapse-section'>
-
         <div className='collapse-heading'>
           <div className='collapse-heading-container'>
             <div>{title}</div>
@@ -21,14 +20,12 @@ const CollapseDescription = ({ children, title }) => {
           </div>
         </div>
 
-        <div className={(active ? "show" : "" + "collapse-content")}>
+        <div className={(active ? 'show' : '' + 'collapse-content')}>
           <div className='collapse-content-container'>
             <div>{children}</div>
           </div>
         </div>
- 
       </div>
-
   )};
 
 export default CollapseDescription

@@ -15,10 +15,8 @@
     gap: 10px;
     bottom: 0;
 }
-
 .logo-img{
-width: 100px;
-
+    width: 100px;
 }
 
 .footer-text{
@@ -32,21 +30,19 @@ width: 100px;
 
 @media screen and (max-width: 768px) {
   
-.footer{
-
-   height: 100px;
-    bottom: 0;
-}
-.footer-text{
-    font-size: 12px;
-  }
+    .footer{
+        height: 100px;
+        bottom: 0;
+    }
+    .footer-text{
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width:768px)and (max-width:992px) {
 
         .footer{
-        
-           height: 100px;
+            height: 100px;
             bottom: 0;
         }
         .footer-text{

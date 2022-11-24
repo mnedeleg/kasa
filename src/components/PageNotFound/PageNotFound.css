@@ -1,54 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.Error-block{
-
+.block-notfound{
+    width: 50%;
+    height: 100% auto;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
-    width: 50%;
-    height: 100% auto;
     padding: 10px;
-
 }
-
-.Error-404{
+.block-404{
     text-align: center;
-    color: #FF6060;
     font-size: 250px;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
+    color: #FF6060;
     margin-block-end: 0px;
     margin-block-start: 0px;
 }
-
-.Error-Oups{
+.block-Oups{
     text-align: center;
-    color: #FF6060;
     font-size: 36px;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
+    color: #FF6060;
 }
-
-.Error-redirection{
+.block-redirection{
     display: flex;
     justify-content: center;
-    color: #FF6060;
     font-size: 18px;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
-    margin: auto;
-  
+    color: #FF6060;
+    margin: auto; 
 }
 
 @media screen and (max-width: 768px) {
-    .Error-404{
+    .block-404{
        margin-top: 100px;
         font-size: 100px;
     }
-    .Error-Oups{
+    .block-Oups{
         font-size: 18px;
     }
-    .Error-redirection{
+    .block-redirection{
         text-align: center;
         margin-top: 100px;
         margin-bottom: 75px;
@@ -58,14 +52,14 @@
 
 @media screen and (min-width:768px)and (max-width:992px) {
 
-    .Error-404{
+    .block-404{
         margin-top: 100px;
          font-size: 150px;
      }
-     .Error-Oups{
+     .block-Oups{
          font-size: 24px;
      }
-     .Error-redirection{
+     .block-redirection{
          text-align: center;
          margin-top: 100px;
          margin-bottom: 20px;

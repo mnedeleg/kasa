@@ -10,16 +10,15 @@ import CollapseDescription from "../components/Appartment/CollapseDescription"
 import StarRating from '../components/Appartment/Star';
 
 const SingleAppartment = () => {
-    const [active, setActive] = useState("title")
-
-
+    const [active, setActive] = useState('title')
     const [appt, setAppt] = useState(null)
     const { id } = useParams()
     const navigate = useNavigate();
+  
     useEffect(()=> {
         const appartment = appartementListData.find((app) => app.id === id);
         if(!appartment){
-            return navigate("/page-introuvable")
+            return navigate('/page-introuvable')
         }
         setAppt(appartment)
     })
@@ -34,8 +33,8 @@ const SingleAppartment = () => {
         
     <div className='home'>
       
-        
       <Carousel slides ={appt.pictures}/>
+
     <div className='intro'>
       <div className='accomodation-heading'>
         <div  className='accomodation-heading-title'>
@@ -48,12 +47,12 @@ const SingleAppartment = () => {
      </div>
             
         <div className='host-section'>
-            <div className='namePhoto'>
+            <div className='host-profile'>
                 <div className='host-section-name'>
                     {hostName}
                 </div>
                 <img 
-                    src= {hostPicture} className='host-section-img' alt="photo de profil de l'hôtesse Nathalie Jean">
+                    src= {hostPicture} className='host-section-img' alt="photo de profil de l'hôte">
                 </img>
             </div>
 
@@ -61,19 +60,20 @@ const SingleAppartment = () => {
               <StarRating rating={appt.rating}/>
             </div>
          </div>
+
     </div>
 
-     
-        
          <div className='all-collapse-section'>
     
-            <CollapseDescription title="Description" className="collapse-logement">
+            <CollapseDescription title='Description' className='collapse-logement'>
                  {appt.description}
             </CollapseDescription>
 
-            <CollapseDescription title="Équipements" className="collapse-logement">
+            <CollapseDescription title='Équipements' className='collapse-logement'>
                 <ul>
-                    {appt.equipments.map((equipment) => <li className='equipment-style'>{equipment}</li> )} 
+                    {appt.equipments.map((equipment) => 
+                        <li className='equipment-style'>{equipment}</li> 
+                    )} 
                 </ul>
             </CollapseDescription>
          </div>

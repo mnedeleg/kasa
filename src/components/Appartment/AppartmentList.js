@@ -4,9 +4,8 @@ import Appartment from "./index"
 
 const AppartmentList = () => {
  
-
     return (
-        <div className="all-flat" >
+        <div className='all-flat' >
              {appartementListData.map((appart) => <Appartment key={appart.id} appart={appart}/>  )}
                 
         </div>

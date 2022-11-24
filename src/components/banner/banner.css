@@ -14,7 +14,6 @@
     justify-content: center;  
     background-position: 45% 45%;
 }
-
 .banner::before{
     position: absolute;
     content: " ";
@@ -25,7 +24,6 @@
     background: rgba(0,0,0,0.3);
     border-radius: 25px;
 }
-
 .banner-title{
     position: relative;
     text-align: center;
@@ -42,7 +40,6 @@
         font-weight: 400;
         padding:20px;
     }
-
     .banner{
         margin-top: 0px;
         margin-bottom: 20px;
