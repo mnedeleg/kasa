@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react'
-import { FaStar } from 'react-icons/fa'
 import { useParams, useNavigate } from "react-router-dom";
 import appartementListData from "../data/kasa-datas.json"
-import Appartment from "../components/Appartment/Index"
 import Carousel from "../components/Appartment/Carousel"
-import picturesTab from "../data/kasa-datas.json"
 import CollapseDescription from "../components/Appartment/CollapseDescription"
 import StarRating from '../components/Appartment/Star';
 
 const SingleAppartment = () => {
-    const [active, setActive] = useState('title')
     const [appt, setAppt] = useState(null)
     const { id } = useParams()
     const navigate = useNavigate();
+   
 
     useEffect(() => {
+        
         const appartment = appartementListData.find((app) => app.id === id);
+
         if (!appartment) {
+        
             return navigate('/page-introuvable')
         }
         setAppt(appartment)
-    })
+    },[id, navigate])
 
     if (appt === null) return null;
 
@@ -51,9 +51,8 @@ const SingleAppartment = () => {
                         <div className='host-section-name'>
                             {hostName}
                         </div>
-                        <img
-                            src={hostPicture} className='host-section-img' alt="photo de profil de l'hôte">
-                        </img>
+                        <img src={hostPicture} className='host-section-img' alt="profil de l'hôte"/>
+                             
                     </div>
 
                     <div className='star'>

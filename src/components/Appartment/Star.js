@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import appartementListData from "../../data/kasa-datas.json"
-import Appartment from "./Index"
+import React from 'react';
 import { FaStar } from "react-icons/fa";
 import "../Appartment/star.css"
 

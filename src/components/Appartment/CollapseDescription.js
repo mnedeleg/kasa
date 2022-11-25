@@ -1,5 +1,4 @@
-import React, { Children, useState } from 'react';
-import appartementListData from "../../data/kasa-datas.json";
+import React, { useState } from 'react';
 import { FaAngleUp } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 
@@ -20,7 +19,7 @@ const CollapseDescription = ({ children, title }) => {
           </div>
         </div>
 
-        <div className={(active ? 'show' : '' + 'collapse-content')}>
+        <div className={(active ? 'show' : 'collapse-content')}>
           <div className='collapse-content-container'>
             <div>{children}</div>
           </div>
