@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "./static/css/main.377534d1.css",
+    "main.js": "./static/js/main.41ceee93.js",
+    "static/js/787.0ce615c0.chunk.js": "./static/js/787.0ce615c0.chunk.js",
+    "static/media/mornington.jpg": "./static/media/mornington.f62aad19659524684a24.jpg",
+    "static/media/cliff.jpg": "./static/media/cliff.864c6090c1d6827156b5.jpg",
+    "static/media/logo-kasa.svg": "./static/media/logo-kasa.bb7954d079ad9bef972bd967db960404.svg",
+    "static/media/logo-kasa-white.svg": "./static/media/logo-kasa-white.364786ac1c2c04a1098ae0a591b021e4.svg",
+    "index.html": "./index.html",
+    "main.377534d1.css.map": "./static/css/main.377534d1.css.map",
+    "main.41ceee93.js.map": "./static/js/main.41ceee93.js.map",
+    "787.0ce615c0.chunk.js.map": "./static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.377534d1.css",
+    "static/js/main.41ceee93.js"
+  ]
+}
