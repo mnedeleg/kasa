@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Accommodation from './pages/Accommodation';
 import About from './pages/About';
 import PageNotFound from './pages/PageNotFound';
-import NavBar from '../src/components/navBar/navBar';
+import NavBar from './components/navBar/NavBar';
 import FooterPage from '../src/components/Footer/Footer';
 
 import './components/navBar/navBar.css';
@@ -20,17 +20,18 @@ import './pages/about.css';
 function App() {
   return (
     <div>
-    
-    <NavBar/>
+
       <BrowserRouter>
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Home/>}></Route>,
           <Route path="/logement/:id" element={<Accommodation/>}></Route>,
           <Route path="/a-propos" element={<About/>}></Route>,
           <Route path="*" element={<PageNotFound/>}></Route>
         </Routes>
+        <FooterPage/>
       </BrowserRouter>
-    <FooterPage/>
+    
    
     </div>
   );

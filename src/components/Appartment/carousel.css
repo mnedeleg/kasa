@@ -29,6 +29,17 @@
     color: white;
 }
 
+.indicator{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom:10px;
+    width: 100%;
+    z-index: 100;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+}
+
 
 @media screen and (max-width: 768px) {
 

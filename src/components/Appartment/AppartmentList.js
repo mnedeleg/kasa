@@ -1,6 +1,6 @@
 import React from 'react';
 import appartementListData from "../../data/kasa-datas.json"
-import Appartment from "./index"
+import Appartment from "./Index"
 
 const AppartmentList = () => {
  

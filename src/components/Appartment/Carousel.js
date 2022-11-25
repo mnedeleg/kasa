@@ -12,6 +12,7 @@ const Carousel = ({ slides }) => {
     const picturesTab = slides;
     const length = picturesTab.length;
   
+
     const nextPicture = () => {
         setCurrent(current === length -1 ? 0 : current + 1)
     }
@@ -19,7 +20,7 @@ const Carousel = ({ slides }) => {
         setCurrent(current === length -1 ? 0 : current + 1)
        
          return(
-            <h1>{current}</h1>
+            <h1 className='test'>{current}</h1>
         )
     }
 
@@ -37,10 +38,11 @@ const Carousel = ({ slides }) => {
         <div className='carousel'>
             <div className='img-container'> 
                 <img className= "img-containter-single" src= {slides[current]} alt="images de l'intérieur de l'appartement"/>
+                <div className="indicator" >{current + 1}/{length}</div>
             </div>    
             <div>
-                <FaChevronLeft className='left-arrow' onClick={prevPicture, prevNumber}/>
-                <FaChevronRight className='right-arrow' onClick={nextPicture, nextNumber}/>
+                <FaChevronLeft className='left-arrow' onClick={prevPicture}/>
+                <FaChevronRight className='right-arrow' onClick={nextPicture}/>
             </div>
         </div>
     )};

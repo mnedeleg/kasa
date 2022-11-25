@@ -9,9 +9,9 @@ function NavBar() {
 
     return (
         <nav className='nav-1'>
-            <div className='logo-container'>
+            <Link to="/" className='logo-container'>
                 <img className='logo-container-img' src={logo} alt= "logo Kasa"/>
-            </div>
+            </Link>
             <ul className='navigation navBar'>
                 <li className='item'> <a className={`link ${activeMenuClassName("/")}`} href="/">Accueil</a></li>
                 <li className='item'><a className={`link ${activeMenuClassName("/a-propos")}`} href="/a-propos">À propos</a></li>   
