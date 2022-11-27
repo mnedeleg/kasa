@@ -5,7 +5,6 @@ import About from './pages/About';
 import PageNotFound from './pages/PageNotFound';
 import NavBar from './components/navBar/NavBar';
 import FooterPage from '../src/components/Footer/Footer';
-
 import './components/navBar/navBar.css';
 import './components/Appartment/appartment.style.css';
 import './components/banner/banner.css';
@@ -15,6 +14,7 @@ import '../src/components/Appartment/carousel.css';
 import '../src/components/Appartment/collapse.css';
 import './pages/accommodation.css';
 import './pages/about.css';
+
 
 function App() {
   return (

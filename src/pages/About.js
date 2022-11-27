@@ -1,10 +1,11 @@
 import AboutInfo from "../data/about-data.json"
 import CollapseDescription from "../components/Appartment/CollapseDescription"
+import Banner from "../components/banner/Banner"
 
 const AboutPage = () => {
     return (
         <div className="about-main-page">
-            <div className="about-banner"></div>
+            <Banner/>
                 <div className="about-collapse-all">  
 
                     {AboutInfo.map((info, i) =>{
