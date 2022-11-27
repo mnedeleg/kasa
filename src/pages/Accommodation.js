@@ -21,7 +21,7 @@ const SingleAppartment = () => {
         }
         setAppt(appartment)
     },[id, navigate])
-
+    
     if (appt === null) return null;
 
     const host = Object.values(appt.host)

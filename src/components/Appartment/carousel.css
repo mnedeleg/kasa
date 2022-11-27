@@ -59,6 +59,6 @@
         font-size: 30px;
     }
     .indicator{
-        font-size: 14px;
+        display: none;
     }
 }

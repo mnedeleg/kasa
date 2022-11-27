@@ -11,6 +11,7 @@ const StarRating = ({rating}) => {
                 return(
                     <FaStar key={index} color={color}/>
                 )
+              
             })}
         </div>
     );

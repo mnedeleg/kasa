@@ -6,7 +6,7 @@ import { FaAngleDown } from "react-icons/fa";
 const CollapseDescription = ({ children, title }) => {
 
 
-  const [ active, setActive] = useState(true);
+  const [ active, setActive] = useState(false);
   const icon = active ? <FaAngleUp/> : <FaAngleDown/>
 
  
