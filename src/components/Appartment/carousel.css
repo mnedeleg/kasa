@@ -44,6 +44,20 @@
     text-shadow: 0px 0px 2px black;
 }
 
+.left-arrowt {
+    display: none;
+    
+}
+.right-arrowt{
+  display: none;
+}
+.test1{
+    color: blue;
+}
+
+.test2{
+    color: pink
+}
 
 @media screen and (max-width: 768px) {
 
